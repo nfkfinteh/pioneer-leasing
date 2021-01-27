@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Ставки по лизингу упали");
 $APPLICATION->SetPageProperty("header-class", "header_transparent top");
 ?>
 <main role="main">
-	<div class="bg-mainpage pt-menu">
+	<div class="bg-mainpage pt-menu">1
 		<div class="top-carousels container">
 			<div class="top-carousels__title">
 				<h1 class="top-carousels__title-first top-carousels__title">
