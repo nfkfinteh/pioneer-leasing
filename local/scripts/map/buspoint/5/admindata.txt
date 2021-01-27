@@ -1,0 +1,5 @@
+пр. Ленина д. 11 (ост. "Национальная библиотека" со стороны "Национальной библиотеки")
+17000
+0;1;0;0;0;0;0;1;0;0;0;0;
+0;1;1;1;1;1;0;1;1;1;1;1;
+https://yandex.ru/maps/45/cheboksary/?um=constructor%3A507f534d1411d83aa7bba8f2cc816f36c3becabb6166c110a60d00332eb11811&source=constructorLink&mode=usermaps&ll=47.163232%2C56.138684&z=16

@@ -1,0 +1,3 @@
+<?
+$sSectionName="pioneer-main-news";
+?>

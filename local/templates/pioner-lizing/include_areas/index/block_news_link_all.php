@@ -1,0 +1,1 @@
+<a class="big-news-container__all-news doted-link" href="/news">Все новости</a>

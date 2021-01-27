@@ -1,0 +1,17 @@
+/bitrix/
+/upload/
+/.vs/
+robots.txt
+.htsecure
+.htaccess
+.htpasswd
+.idea
+.DS_Store
+sitemap.xml
+sitemap_files.xml
+sitemap*.xml
+.htaccess.restore
+Thumbs.db
+*.log
+Icon.
+*.pdf

@@ -1,0 +1,12 @@
+<?
+$PERM["/"]["*"]="R";
+$PERM["site_wb"]["2"]="D";
+$PERM["site_wb"]["5"]="D";
+$PERM["site_wb"]["3"]="D";
+$PERM["site_wb"]["4"]="D";
+$PERM["site_wb"]["6"]="D";
+$PERM["site_wb"]["7"]="D";
+$PERM["site_wb"]["9"]="D";
+$PERM["site_wb"]["8"]="D";
+$PERM["site_wb"]["*"]="D";
+?>

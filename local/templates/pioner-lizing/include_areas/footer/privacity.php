@@ -1,0 +1,1 @@
+<a class="footer__link doted-link" href="/investor/docs/Политика конфиденциальности.pdf" target="_blank">Обработка персональных данных</a>

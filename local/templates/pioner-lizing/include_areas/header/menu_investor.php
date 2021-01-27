@@ -1,0 +1,1 @@
+<a class="ml-5 d-none d-lg-block" href="/investor/">Инвесторам</a>

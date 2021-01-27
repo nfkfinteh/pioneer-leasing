@@ -1,0 +1,1 @@
+<a class="top-carousels__news-link" href="/news/">Все новости</a>

@@ -1,0 +1,117 @@
+.news-section-list h3
+{
+	text-transform:uppercase;
+	color:#505050;
+	letter-spacing:0.025em;
+	font-size:18px;
+	font-family:pfdin-bold;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+.news-section-list ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;	
+}
+
+.news-section-list ul li
+{
+	
+}
+
+.news-section-list ul li a
+{
+	display:inline-block;
+	height:30px;
+	border-radius:5px;
+	color:#ffffff;
+	text-shadow:0px -1px 0px rgba(20,20,21, 0.3);
+	letter-spacing:0.025em;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding:10px 0px 0px 30px;
+	width:270px;
+	background: #33c260;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzYzI2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZmFiNTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #33c260 0%, #1fab54 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33c260), color-stop(100%,#1fab54)); 
+	background: -webkit-linear-gradient(top,  #33c260 0%,#1fab54 100%);
+	background: -o-linear-gradient(top,  #33c260 0%,#1fab54 100%);
+	background: -ms-linear-gradient(top,  #33c260 0%,#1fab54 100%); 
+	background: linear-gradient(to bottom,  #33c260 0%,#1fab54 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33c260', endColorstr='#1fab54',GradientType=0 ); 
+}
+
+.news-section-list ul li.select-node a
+{
+	background: #078352;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA3ODM1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZDVjMmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #078352 0%, #0d5c2d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#078352), color-stop(100%,#0d5c2d)); 
+	background: -webkit-linear-gradient(top,  #078352 0%,#0d5c2d 100%); 
+	background: -o-linear-gradient(top,  #078352 0%,#0d5c2d 100%); 
+	background: -ms-linear-gradient(top,  #078352 0%,#0d5c2d 100%); 
+	background: linear-gradient(to bottom,  #078352 0%,#0d5c2d 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#078352', endColorstr='#0d5c2d',GradientType=0 ); 
+}
+
+.news-section-list ul li a .expand-icon
+{
+	float:right;
+	display:inline-block;
+	width:6px;
+	height:4px;
+	background:url(images/collapse-icon.png) 0 0 no-repeat;
+	margin:8px  15px 0px 0px;	
+}
+
+.news-section-list ul li.select-node a .expand-icon
+{
+	background:url(images/expand-icon.png) 0 0 no-repeat;
+}
+
+/* MONTHS */
+.news-section-list ul ul
+{
+	display:none;
+}
+
+.news-section-list ul li.select-node ul 
+{
+	display:block;
+}
+
+.news-section-list ul li.select-node ul a
+{
+	background:#999999;
+	filter:none;
+	border-top:solid 1px #b8b8b8;
+	color:#FFF;
+	letter-spacing:0.025em;
+	font-size:13px;
+	font-family:pfdin-regular;
+	text-shadow:0px -1px 0px rgba(20, 20, 21, 0.3);
+	font-weight:normal;
+}
+
+.news-section-list ul li.select-node ul a:hover
+{
+	color:#FFF;
+}
+
+.news-section-list ul li.select-node ul li.select-sub-node a
+{
+	border-top:solid 1px #949494;
+	background:#666666;
+	filter:none;
+}
+
+.news-section-list ul li.select-node ul li:hover a
+{
+	border-top:solid 1px #949494;
+	background:#666666;
+	filter:none;
+}
