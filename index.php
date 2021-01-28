@@ -6,11 +6,7 @@ $APPLICATION->SetPageProperty("title", "Лизинг по всей России 
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 $APPLICATION->SetTitle("Ставки по лизингу упали");
 $APPLICATION->SetPageProperty("header-class", "header_transparent top");
-<<<<<<< HEAD
 //test
-=======
-//124567898
->>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 ?>
 <main role="main">
 	<div class="bg-mainpage pt-menu">
