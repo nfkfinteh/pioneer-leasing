@@ -1,0 +1,87 @@
+.last-news-list
+{
+	background:url(images/last-news-bg.png);
+	border-radius:5px 5px 5px 5px;
+	padding:20px 30px 20px 30px;
+	
+}
+
+.last-news-node
+{
+	min-height: 120px;
+    padding-bottom: 34px;
+    width: 30%;
+    float: left;
+    margin-right: 28px;	
+}
+
+.last-news-link
+{
+	text-align:left;
+	padding-top:4px;
+}
+
+.last-news-link a
+{
+	color:#1eaa54;
+	font-size:13px;
+	line-height:20px;
+	letter-spacing:0.025em;
+	text-decoration:underline;
+}
+
+.last-news-link a:hover
+{
+	color:#1eaa54;
+	text-decoration:underline;
+}
+
+.last-news-date
+{
+	font-size:13px;
+	color:#666666;
+	letter-spacing:0.025em;	
+}
+
+.last-news-show-all
+{
+	margin-top:-5px;
+	padding-bottom:12px;
+}
+
+.last-news-show-all a
+{
+	color:#1eaa54;
+	font-size:13px;
+	line-height:20px;
+	letter-spacing:0.025em;
+	text-decoration:none;
+}
+
+.last-news-show-all a:hover
+{
+	color:#1eaa54;
+	text-decoration:none;
+}
+
+.last-news-list .calendar-news-icon
+{
+	width:12px;
+	height:12px;
+	display:inline-block;
+	background:url(images/calendar-icon.png) no-repeat;
+	padding-right:4px;	
+}
+
+.last-news-list-title
+{
+	color: #1eaa54;
+    font-family: pfdin-bold;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    padding-bottom: 13px;
+    padding-top: 47px;
+	
+}

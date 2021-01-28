@@ -1,0 +1,89 @@
+/* CLIENTS LOGOS */
+.clients-logos ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	width:940px;
+	margin:0px auto;
+	left:50%;
+}
+
+.clients-logos ul li
+{
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+	width:160px;
+	padding:0px;
+	margin:0px;
+	padding-top:20px;
+}
+
+.clients-logos ul li div
+{
+	background:#FFF;
+	display:table-cell;
+	overflow:hidden;
+	width:140px;
+	height:75px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.clients-logos ul li.hide
+{
+	display:none;
+}
+
+.clients-logos ul li a
+{
+	text-decoration:none;
+}
+
+.clients-logos ul li a:hover
+{
+	text-decoration:none;
+}
+
+.clients-logos ul li:nth-child(6n)
+{
+	text-align:right;
+	width:140px;	
+}
+
+.clients-logos ul li:nth-child(1)
+{
+	text-align:left;
+}
+
+.clients-logos ul li:nth-child(7n)
+{
+	text-align:left;
+}
+
+.clients-logos
+{
+	margin-top:-10px;
+	padding-bottom:50px;
+	clear:both;	
+}
+
+.show-all-partners
+{
+	padding-top:23px;
+}
+
+.show-all-partners a
+{
+	color:#1eaa54;
+	font-size:13px;
+	letter-spacing:0.025em;
+	border-bottom:dotted 1px #339933;	
+}
+
+.show-all-partners a:hover
+{
+	border-bottom:dotted 1px #339933;
+	color:#1eaa54;
+}

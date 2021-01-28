@@ -1,0 +1,1 @@
+<a class="btn btn-main btn-255" href="/investor/docs/presentation_3.pdf" target="_blank">Презентация для инвесторов</a>

@@ -1,0 +1,1 @@
+<a class="ml-5 invest-menu_link d-lg-block" href="<?= HOST_PIONEER_LEASING ?>/investor/chetvertyj-vypusk/">Инвесторам</a>

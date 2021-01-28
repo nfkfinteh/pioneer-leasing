@@ -1,0 +1,1 @@
+<img src="<?=SITE_TEMPLATE_PATH.'/img/img-reklama/desc-img.png'?>" alt="Наружная реклама">

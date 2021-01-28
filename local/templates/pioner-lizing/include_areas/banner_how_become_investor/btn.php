@@ -1,0 +1,1 @@
+<a class="btn btn-main btn-255 mt-5" href="https://nfksber.ru/open_account/" target="_blank">Открыть счет</a>

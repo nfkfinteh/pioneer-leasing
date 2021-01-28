@@ -1,0 +1,1 @@
+<button class="button button-js">Забронировать</button>
