@@ -6,6 +6,7 @@ $APPLICATION->SetPageProperty("title", "Лизинг по всей России 
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 $APPLICATION->SetTitle("Ставки по лизингу упали");
 $APPLICATION->SetPageProperty("header-class", "header_transparent top");
+//124567898
 ?>
 <main role="main">
 	<div class="bg-mainpage pt-menu">
