@@ -1,9 +1,14 @@
 <?
+<<<<<<< HEAD
+=======
+$isShowSecMenu = true;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Общие сведения");
 $APPLICATION->SetPageProperty("title", "Документы | ООО «Пионер Лизинг»");
 $APPLICATION->SetPageProperty("description", "Документы компании. Важная информация для клиентов на сайте Понер-Лизинг");
 ?>
+<<<<<<< HEAD
 <div class="second-menu">
     <div class="container h-100">
         <?$APPLICATION->IncludeComponent(
@@ -27,6 +32,8 @@ $APPLICATION->SetPageProperty("description", "Документы компани�
 );?>
     </div>
 </div>
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 <main class="pt-double-menu" role="main">
     <div class="container">
         <?$APPLICATION->IncludeComponent(

@@ -1,5 +1,9 @@
 <?php
 define('LOG_FILENAME', $_SERVER['DOCUMENT_ROOT'] . '/bitrix/logs/log_' . date('Y_m_d') . '.txt');
+<<<<<<< HEAD
+=======
+define('HOST_PIONEER_LEASING', 'https://pioneer-leasing.ru');
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 
 //Типы инфоблоков
 define('CONTENT_IBLOCK_TYPE', 'content');
@@ -29,6 +33,10 @@ define('WHY_YOU_SHOULD_BUY_IBLOCK_ID', 17); //Почему стоит покуп
 define('BANNER_INVESTOR_FIRST_FILTER_NAME', 'BannerInvestorFirstFilterName');
 define('BANNER_INVESTOR_SECOND_FILTER_NAME', 'BannerInvestorSecondFilterName');
 define('BANNER_INVESTOR_THIRD_FILTER_NAME', 'BannerInvestorThirdFilterName');
+<<<<<<< HEAD
+=======
+define('BANNER_INVESTOR_FOURTH_FILTER_NAME', 'BannerInvestorFourthFilterName');
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 define('BANNER_SALE_FILTER_NAME', 'BannerSaleFilterName');
 define('BANNER_HEADER_FILTER_NAME', 'BannerHeaderFilterName');
 define('BANNER_MENU_SIDEBAR_FILTER_NAME', 'BannerMenuSidebarFilterName');

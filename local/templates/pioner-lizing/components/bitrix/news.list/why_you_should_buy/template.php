@@ -41,9 +41,12 @@ if (count($arResult['ITEMS']) % 2 == 0) {
     $class = 'offset-xl-6 mt-3 btn-list-why_you_should_buy_after';
 }
 ?>
+<<<<<<< HEAD
 <div class="col-12 col-md-6 <?= $class ?>">
     <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
         "AREA_FILE_SHOW" => "file",
         "PATH" => SITE_TEMPLATE_PATH."/include_areas/investor/vtoroy-vypusk/why_you_should_buy_btn.php",
     ));?>
 </div>
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306

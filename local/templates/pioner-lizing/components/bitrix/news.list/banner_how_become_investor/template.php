@@ -30,6 +30,12 @@ if (empty($arResult['ITEMS'])) {
         ?>
         <div class="how-invest col-12 col-md-4" id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
 			<div class="how-invest__number"><?= sprintf("%02d", $num); ?></div>
+<<<<<<< HEAD
+=======
+            <?if ($arParams['IS_QUARTERLY']) {
+                $arItem['~NAME'] = str_ireplace("ежемесячный", "ежеквартальный", $arItem['~NAME']);
+            }?>
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 			<div class="how-invest__text"><?= $arItem['~NAME'] ?></div>
 		</div>
     <? } ?>

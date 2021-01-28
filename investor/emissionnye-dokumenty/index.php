@@ -1,9 +1,14 @@
 <?
+<<<<<<< HEAD
+=======
+$isShowSecMenu = true;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Эмиссионные документы");
 $APPLICATION->SetPageProperty("title", "Эмиссионные документы посмотреть | ООО «Пионер-Лизинг»");
 $APPLICATION->SetPageProperty("description", "Эмиссионные документы. Лизинг. Информационные сообщения облигационерам. Решения, приказы, условия выпуска, меморандумы");
 ?>
+<<<<<<< HEAD
 <div class="second-menu">
     <div class="container h-100">
         <?$APPLICATION->IncludeComponent(
@@ -28,6 +33,8 @@ $APPLICATION->SetPageProperty("description", "Эмиссионные докум�
     </div>
 </div>
 
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 <main class="pt-double-menu" role="main">
     <div class="container">
         <?$APPLICATION->IncludeComponent(

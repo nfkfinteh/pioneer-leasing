@@ -1,4 +1,45 @@
 $(document).ready(function () {
+<<<<<<< HEAD
+=======
+    $(".js-reklama-form").on("submit", function (e) {
+        e.preventDefault();
+        var form = $(this);
+        var data = new FormData(form[0]);
+        if (form[0].checkValidity()) {
+            $(form).find('input').prop("disabled", true);
+            $(form).find('button').prop("disabled", true);
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: data,
+                async: false,
+                success: function (data) {
+                    console.log(data);
+                    $(form).find('input').prop("disabled", false);
+                    $(form).find('button').prop("disabled", false);
+                    if (data['result'] === 'success') {
+                        $(form).trigger("reset");
+                        $(form).html('Благодарим за обращение! <br>Мы обязательно свяжемся с Вами в ближайшее время')
+                    } else {
+                        $(form).find('.js-message-form').html(data['message']);
+                        $.each( data['errors_fields'], function( keyField, nameField ) {
+                            $(form).find("*[name='"+nameField+"']").closest('.contacts__form-input').addClass('error');
+                        });
+                    }
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
+        }
+
+    });
+
+
+
+
+
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
     ymaps.ready(init);
 
     var maps = document.getElementById("map");
@@ -10,7 +51,11 @@ $(document).ready(function () {
 
     /////// точки шитов //////
     var array_scheet = $.ajax({
+<<<<<<< HEAD
         url: "https://pioneer-leasing.ru/local/scripts/get-ib-map-point.php?type=banner",
+=======
+        url: "/local/scripts/get-ib-map-point.php?type=banner",
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         async: false,
         success: function (data) {
             //console.log(data);
@@ -28,7 +73,11 @@ $(document).ready(function () {
 
     /////////// точки автобусных остановок /////////
     var array_busstop = $.ajax({
+<<<<<<< HEAD
         url: "https://pioneer-leasing.ru/local/scripts/get-ib-map-point.php?type=bus",
+=======
+        url: "/local/scripts/get-ib-map-point.php?type=bus",
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         async: false,
         success: function (data) {
             // console.log(data);
@@ -61,6 +110,7 @@ $(document).ready(function () {
         var split_jsone = JSON.parse(arr_points.responseText);
         var jsone_busstop = JSON.parse(arr_busstop_point.responseText);
 
+<<<<<<< HEAD
         console.log("split_jsone");
         console.log(split_jsone);
         console.log("jsone_busstop");
@@ -68,6 +118,9 @@ $(document).ready(function () {
 
         function pointMap(coord, type_points) {
             console.log(coord);
+=======
+        function pointMap(coord, type_points) {
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;" class="points_card">$[properties.iconContent]</div>');
             var card =
                 '<div class="card" style="width: 21rem;position: relative;">' +
@@ -77,10 +130,17 @@ $(document).ready(function () {
                 '<li class = "list-group-item" style="padding: 5px 20px;"> ' +
                 coord.adress +
                 " </li>" +
+<<<<<<< HEAD
                 '<li class = "list-group-item" style="padding: 5px 20px;"> <img src="https://pioneer-leasing.ru/local/scripts/map/img/magnifier.png" id="zoom_a"class="sidea" style="cursor: pointer;margin-right: 10px;"/>' +
                 coord.textA +
                 " </li>" +
                 '<li class = "list-group-item" style="padding: 5px 20px;"> <img src="https://pioneer-leasing.ru/local/scripts/map/img/magnifier_bl.png" id="zoom_b" class="sideb" style="cursor: pointer;margin-right: 10px;"/>' +
+=======
+                '<li class = "list-group-item" style="padding: 5px 20px;"> <img src="/local/scripts/map/img/magnifier.png" id="zoom_a"class="sidea" style="cursor: pointer;margin-right: 10px;"/>' +
+                coord.textA +
+                " </li>" +
+                '<li class = "list-group-item" style="padding: 5px 20px;"> <img src="/local/scripts/map/img/magnifier_bl.png" id="zoom_b" class="sideb" style="cursor: pointer;margin-right: 10px;"/>' +
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
                 coord.textB +
                 " </li>" +
                 '</ul> <a href="#popup:myform" target data="' +
@@ -134,6 +194,25 @@ $(document).ready(function () {
             // console.log(coords);
             myMap.geoObjects.add(pointMap(coords, type_points));
         }
+<<<<<<< HEAD
+=======
+
+        myMap.setBounds(myMap.geoObjects.getBounds(), {
+            checkZoomRange: true,
+            zoomMargin: 35,
+        })
+        .then(function () {
+            if (myMap.action.getCurrentState().zoom > 15) {
+                myMap.setZoom(15);
+            }
+        }, function (err) {
+            // Не удалось показать заданный регион.
+            // ...
+        }, this);
+        if ($(window).width() < 1000) {
+            myMap.behaviors.disable('drag');
+        }
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
     }
 
     maps.onclick = function (event) {
@@ -157,15 +236,25 @@ $(document).ready(function () {
             img_side_a.style.display = "inline";
             img_side_b.style.display = "none";
             var img = target;
+<<<<<<< HEAD
             img.src = "https://pioneer-leasing.ru/local/scripts/map/img/magnifier.png";
             zoom_img_b.src = "https://pioneer-leasing.ru/local/scripts/map/img/magnifier_bl.png";
+=======
+            img.src = "/local/scripts/map/img/magnifier.png";
+            zoom_img_b.src = "/local/scripts/map/img/magnifier_bl.png";
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         }
         if (target.className == "sideb") {
             img_side_b.style.display = "inline";
             img_side_a.style.display = "none";
             var img = target;
+<<<<<<< HEAD
             img.src = "https://pioneer-leasing.ru/local/scripts/map/img/magnifier.png";
             zoom_img_a.src = "https://pioneer-leasing.ru/local/scripts/map/img/magnifier_bl.png";
+=======
+            img.src = "/local/scripts/map/img/magnifier.png";
+            zoom_img_a.src = "/local/scripts/map/img/magnifier_bl.png";
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         }
     };
     var fireRefreshEventOnWindow = function () {
@@ -182,7 +271,10 @@ $(document).ready(function () {
 
     var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 5,
+<<<<<<< HEAD
         slidesPerGroup: 5,
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         spaceBetween: 50,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -193,21 +285,33 @@ $(document).ready(function () {
         breakpoints: {
             320: {
                 slidesPerView: 1,
+<<<<<<< HEAD
                 slidesPerGroup: 1,
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
                 spaceBetween: 0,
             },
             768: {
               slidesPerView: 2,
+<<<<<<< HEAD
               slidesPerGroup: 2,
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
               spaceBetween: 30,
             },
             1024: {
               slidesPerView: 4,
+<<<<<<< HEAD
               slidesPerGroup: 4,
             },
             1250: {
                 slidesPerView: 5,
                 slidesPerGroup: 5,
+=======
+            },
+            1250: {
+                slidesPerView: 5,
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
             }
         }
     });
@@ -241,7 +345,11 @@ $(document).ready(function () {
         $(".nav-menu").toggleClass("nav-menu_active");
     });
     $(".nav-menu a").click(function () {
+<<<<<<< HEAD
         $(".menu-link").toggleClass("menu-link_active"); 
+=======
+        $(".menu-link").toggleClass("menu-link_active");
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         $(".nav-menu").toggleClass("nav-menu_active");
     });
 

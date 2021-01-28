@@ -1,10 +1,15 @@
 <?
+<<<<<<< HEAD
+=======
+$isShowSecMenu = true;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 require_once $_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php';
 
 $APPLICATION->SetTitle("Инвесторам");
 $APPLICATION->SetPageProperty("title", "Облигации второй выпуск | ООО «Пионер-Лизинг»");
 $APPLICATION->SetPageProperty("description", "Открыть счет онлайн и приобрести биржевые облигации ООО «Пионер-Лизинг» 1-го, 2-го и 3-го выпуска.");
 ?>
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" media="all" href="<?=SITE_TEMPLATE_PATH?>/css/datepicker.css" />
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/moment.min.js"></script>
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/datepicker.js"></script>
@@ -31,6 +36,8 @@ $APPLICATION->SetPageProperty("description", "Открыть счет онлай
 	);?>
 		</div>
 	</div>
+=======
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 		<main class="pt-double-menu" role="main">
 			<div class="container">
 				<?$APPLICATION->IncludeComponent(
@@ -204,6 +211,16 @@ $APPLICATION->SetPageProperty("description", "Открыть счет онлай
 								"CACHE_GROUPS" => CACHE_GROUPS,
 							)); ?>
 
+<<<<<<< HEAD
+=======
+							<div class="col-12 col-md-6 <?= $class ?>">
+							    <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+							        "AREA_FILE_SHOW" => "file",
+							        "PATH" => SITE_TEMPLATE_PATH."/include_areas/investor/vtoroy-vypusk/why_you_should_buy_btn.php",
+							    ));?>
+							</div>
+
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 
 						</div>
 					</div>

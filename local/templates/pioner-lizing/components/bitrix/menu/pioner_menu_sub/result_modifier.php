@@ -1,4 +1,15 @@
 <?
+<<<<<<< HEAD
+=======
+
+foreach($arResult as $key => $arItem) {
+    if (strripos($arItem["LINK"], 'http') === false) {
+        $arResult[$key]["LINK"] = HOST_PIONEER_LEASING.$arItem["LINK"];
+    }
+}
+
+
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 $arResult['BODY_CLASS'] = "";
 foreach ($arResult as $key => $arItem) {
 	if ($arItem['PARAMS']['SHOW_CHILDREN'] == "Y") {

@@ -101,7 +101,11 @@ function custom_mail($to, $subject, $message, $additional_headers, $additional_p
     {
         $isHTML=false;
     }
+<<<<<<< HEAD
     $isHTML=false;
+=======
+    //$isHTML=false;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 
     $filesIDs=array();
     $filesSRCs=array();

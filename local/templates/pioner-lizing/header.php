@@ -15,6 +15,10 @@
 
 	<?$APPLICATION->AddHeadString('<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>',true)?>
 	<?$APPLICATION->AddHeadString('<script src="https://yastatic.net/share2/share.js" async="async"></script>',true)?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 	<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH .'/js/jquery-3.5.1.min.js' );?>
 	<?$APPLICATION->AddHeadScript( SITE_TEMPLATE_PATH . '/js/owl.carousel.min.js' );?>
 	<?$APPLICATION->AddHeadScript( SITE_TEMPLATE_PATH . '/js/bootstrap.min.js' );?>
@@ -40,7 +44,11 @@
 		<div class="main-menu_container">
 			<div class="container h-100">
 				<nav class="navbar">
+<<<<<<< HEAD
 					<a class="navbar-brand" href="/"></a>
+=======
+					<a class="navbar-brand" href="<?= HOST_PIONEER_LEASING ?>/"></a>
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 					<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal" aria-expanded="false">
 						<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H22V2.75002H0V0ZM22 7.24998H0V10H22V7.24998ZM11 14.5H0V17.25H11V14.5Z" fill="#FFCD15" />
@@ -256,6 +264,7 @@
 			</div>
 		</div>
 		<? if($isShowSecMenu == true) :?>
+<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" media="all" href="<?=SITE_TEMPLATE_PATH?>/css/datepicker.css" />
 		<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/moment.min.js"></script>
 		<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/datepicker.js"></script>
@@ -283,6 +292,35 @@
 				</div>
 			</div>
 		<? endif;?>
+=======
+			<link rel="stylesheet" type="text/css" media="all" href="<?=SITE_TEMPLATE_PATH?>/css/datepicker.css" />
+			<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/moment.min.js"></script>
+			<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/datepicker.js"></script>
+				<div class="second-menu">
+					<div class="container h-100">
+						<?$APPLICATION->IncludeComponent(
+					"bitrix:menu",
+					"pioner_menu_sub",
+					array(
+						"ROOT_MENU_TYPE" => "sub_menu",
+						"MAX_LEVEL" => "4",
+						"CHILD_MENU_TYPE" => "",
+						"USE_EXT" => "N",
+						"DELAY" => "N",
+						"ALLOW_MULTI_SELECT" => "N",
+						"MENU_CACHE_TYPE" => "A",
+						"MENU_CACHE_TIME" => "3600",
+						"MENU_CACHE_USE_GROUPS" => "Y",
+						"MENU_CACHE_GET_VARS" => array(
+						),
+						"COMPONENT_TEMPLATE" => "pioner_menu_sub"
+					),
+					false
+				);?>
+					</div>
+				</div>
+		<? endif; ?>
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 	</header>
 
 	<div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-label="Меню" aria-hidden="true">

@@ -34,7 +34,11 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
 	<div id="<?echo $CONTAINER_ID?>" class="search-block">
 		<div class="container search-container" itemscope itemtype="http://schema.org/WebSite">
 			<link itemprop="url" href="<?= $host ?>/"/>
+<<<<<<< HEAD
 			<form action="<?echo $arResult["FORM_ACTION"]?>" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+=======
+			<form action="<?= HOST_PIONEER_LEASING ?><?echo $arResult["FORM_ACTION"]?>" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 				<span class="search-form-title"><?=GetMessage("CT_BST_SEARCH_BUTTON");?></span>
 				<meta itemprop="target" content="<?= $host ?>/search/?q={q}"/>
 				<input itemprop="query-input" id="<?echo $INPUT_ID?>" type="text" name="q" value="" autocomplete="off" />

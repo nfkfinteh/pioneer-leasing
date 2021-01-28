@@ -33,7 +33,11 @@ foreach ($arResult['ITEMS'] as $k => $arItem) {
 	}
 
 	?>
+<<<<<<< HEAD
 	<div class="big-banner-block <?= $classBlock ?>" id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
+=======
+	<div class="big-banner-block <?= $classBlock ?> <?= $arItem['CODE'] ?>" id="<?= $this->GetEditAreaId($arItem['ID']) ?>">
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 		<div class="container big-banner-block__wrap" >
 			<div class="big-banner-block__1-text">
 				<h1 class="big-banner-block__name">

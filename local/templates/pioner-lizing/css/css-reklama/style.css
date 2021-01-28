@@ -56,7 +56,11 @@ body{
 .video {
     position: absolute;
 	top: 0;
+<<<<<<< HEAD
 	left: 0;	
+=======
+	left: 0;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -465,7 +469,11 @@ body{
             align-items: center;
 }
 .swiper-slide {
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 }
 .swiper-slide-center {
     display: -webkit-box;
@@ -598,7 +606,11 @@ body{
     height: 900px;
 }
 .menu-link {
+<<<<<<< HEAD
     display: none;   
+=======
+    display: none;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 }
 @media screen and (max-width:1440px) {
     .swiper-button-next-unique {
@@ -616,15 +628,41 @@ body{
         width: 91.7%;
     }
     .desk-img img {
+<<<<<<< HEAD
         max-width: 750px;
+=======
+        max-width: 600px;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
     }
     .more-desc_img img {
         max-width: 700px;
     }
     .desk-img {
+<<<<<<< HEAD
         bottom: -4px;
         right: 0;
     }
+=======
+        right: 0;
+    }
+    .preim_item {
+        max-width: 200px;
+    }
+    .more-desc_img {
+        position: relative;
+        right: 54px;
+        bottom: -60px;
+    }
+    .more-desc_img img {
+        max-width: 600px;
+    }
+    .more-desc {
+        margin-bottom: 30px;
+    }
+    #map {
+        height: 550px;
+    }
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 }
 @media screen and (max-width:991px) {
     h2 {
@@ -855,7 +893,13 @@ body{
     }
     .preim_item {
         margin-bottom: 20px;
+<<<<<<< HEAD
         max-width: 190px;
+=======
+        max-width: 300px;
+        width: 300px;
+        height: 250px;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
     }
     .preim_item p {
         margin-top: 10px;
@@ -1012,6 +1056,15 @@ body{
             -ms-flex-align:start;
                 align-items:flex-start;
     }
+<<<<<<< HEAD
+=======
+    .desc_item {
+        max-width: 100%;
+    }
+    .more-desc_item {
+        max-width: 100%;
+    }
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 }
 
 
@@ -1073,4 +1126,26 @@ body{
     color: #fff;
     background-color: #449d44;
     border-color: #419641;
+<<<<<<< HEAD
+=======
+}
+
+.js-message-form:not(:empty) {
+    color: #ec2a2a;
+    margin-bottom: 0.75em;
+    font-weight: 500;
+}
+.main-offer_containernb form.js-reklama-form {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.popup .js-message-form:not(:empty) {
+    margin-bottom: 0;
+    margin-top: 0.75em;
+}
+.popup form.js-reklama-form {
+    margin-top: 0.75em;
+    font-size: 1.25em;
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 }

@@ -36,6 +36,16 @@ $aMenuLinks = Array(
 		""
 	),
 	Array(
+<<<<<<< HEAD
+=======
+		"Рекламная деятельность",
+		"https://pioneer-reklama.ru/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 		"Поиск",
 		"/search/",
 		Array(),

@@ -1,0 +1,1 @@
+<a class="btn btn-main btn-auto mt-3" href="/investor/docs/prezentacia_chetvertyj_vypusk.pdf" target="_blank">Презентация для инвесторов</a>

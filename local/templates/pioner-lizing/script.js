@@ -15,13 +15,21 @@ $(document).ready(function() {
 		scrollY = pos;
 	})
 	// end
+<<<<<<< HEAD
 
     if ($(window).width() < 768) {
+=======
+    if ( $(window).width() < 768 ) {
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
         if ($("ul.second-menu__menu").length){
             var leftSubMenu = $("ul.second-menu__menu li.active").position().left - 15;
             $("ul.second-menu__menu").scrollLeft(leftSubMenu);
         }
+<<<<<<< HEAD
 	}
+=======
+    }
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 });
 
 

@@ -2,9 +2,15 @@
 $aMenuLinks = Array(
 	Array(
 		"Как стать инвестором",
+<<<<<<< HEAD
 		"/investor/",
 		Array(),
 		Array("SHOW_CHILDREN"=>"Y"),
+=======
+		"/investor/chetvertyj-vypusk/",
+		Array(),
+		Array("SHOW_CHILDREN"=>"N"),
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 		""
 	),
 	Array(
@@ -29,6 +35,16 @@ $aMenuLinks = Array(
 		""
 	),
 	Array(
+<<<<<<< HEAD
+=======
+		"Четвертый выпуск",
+		"/investor/chetvertyj-vypusk/",
+		Array(),
+		Array("CHILDREN_ITEM"=>"Y"),
+		""
+	),
+	Array(
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 		"Общие сведения",
 		"/investor/obshchie-svedeniya",
 		Array(),

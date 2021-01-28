@@ -8,7 +8,20 @@
 				continue;
 			?>
 			<?if(!empty($arItem['CHILDREN'])):?>
+<<<<<<< HEAD
 				<li class="<?if($arItem["SELECTED"]):?>active<?endif;?> second-menu__dropdown <?if ($arItem['PARAMS']['SHOW_CHILDREN'] == "Y") { echo 'show_child_menu_block'; }?>">
+=======
+				<?if (($arItem['PARAMS']['SHOW_CHILDREN'] == "Y") || ($arItem['SELECTED'])) {
+					?>
+					<style type="text/css">
+						ul.breadcrumbs {
+							margin-top: 5em;
+						}
+					</style>
+					<?
+				}?>
+				<li class="<?if($arItem["SELECTED"]):?>active<?endif;?> second-menu__dropdown <?if (($arItem['PARAMS']['SHOW_CHILDREN'] == "Y") || ($arItem['SELECTED'])) { echo 'show_child_menu_block'; }?>">
+>>>>>>> 566b7848f0b2f2776e7e546e21263df99fc8f306
 					<a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a>
 					<ul class="second-menu__submenu tabs__caption">
 						<?foreach($arItem['CHILDREN'] as $arChildren):?>
