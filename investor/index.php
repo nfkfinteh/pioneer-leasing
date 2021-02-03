@@ -66,7 +66,13 @@ $APPLICATION->SetTitle("Инвесторам");
 					<p class="mt-4">Идентификационный номер выпуска – 4B02-03-00331-R-001P от 24.10.2019</p>
 					<p class="mt-4">Идентификационный номер программы – 4-00331-R-001P-02E от 20.04.2018</p>
 					<p class="mt-4">Андеррайтер – АО «НФК-Сбережения» (краткое наименование: ИК НФК-Сбер, код участника торгов – GC0294900000)</p>
-					<a class="btn btn-main btn-260 mt-3" href="/investor/docs/memorandum_3v.pdf" target="_blank">Инвестиционный меморандум</a>
+					<div class="btn-blocks-investor">
+						<a class="btn btn-main btn-260 mt-3" href="/investor/docs/memorandum_3v.pdf" target="_blank">Инвестиционный меморандум</a>
+						<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+							"AREA_FILE_SHOW" => "file",
+							"PATH" => SITE_TEMPLATE_PATH."/include_areas/investor/tretiy-vypusk/why_you_should_buy_btn.php",
+						));?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -178,12 +184,6 @@ $APPLICATION->SetTitle("Инвесторам");
 						"CACHE_FILTER" => CACHE_FILTER,
 						"CACHE_GROUPS" => CACHE_GROUPS,
 					)); ?>
-					<div class="col-12 col-md-6 <?= $class ?>">
-						<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
-							"AREA_FILE_SHOW" => "file",
-							"PATH" => SITE_TEMPLATE_PATH."/include_areas/investor/tretiy-vypusk/why_you_should_buy_btn.php",
-						));?>
-					</div>
 				</div>
 			</div>
 		</div>

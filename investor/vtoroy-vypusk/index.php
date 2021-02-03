@@ -66,7 +66,13 @@ $APPLICATION->SetPageProperty("description", "Открыть счет онлай
 							<p class="mt-4">Идентификационный номер выпуска – 4B02-02-00331-R-001P от 11.03.2019</p>
 							<p class="mt-4">Идентификационный номер программы – 4-00331-R-001P-02E от 20.04.2018</p>
 							<p class="mt-4">Андеррайтер – АО «НФК-Сбережения» (краткое наименование: ИК НФК-Сбер, код участника торгов – GC0294900000)</p>
-							<a class="btn btn-main btn-260 mt-3" href="/investor/docs/Пионер-Лизинг%20меморандум%202-й%20выпуск%20130319.pdf" target="_blank">Инвестиционный меморандум</a>
+							<div class="btn-blocks-investor">
+								<a class="btn btn-main btn-260 mt-3" href="/investor/docs/Пионер-Лизинг%20меморандум%202-й%20выпуск%20130319.pdf" target="_blank">Инвестиционный меморандум</a>
+								<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+									"AREA_FILE_SHOW" => "file",
+									"PATH" => SITE_TEMPLATE_PATH."/include_areas/investor/vtoroy-vypusk/why_you_should_buy_btn.php",
+								));?>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -178,15 +184,6 @@ $APPLICATION->SetPageProperty("description", "Открыть счет онлай
 								"CACHE_FILTER" => CACHE_FILTER,
 								"CACHE_GROUPS" => CACHE_GROUPS,
 							)); ?>
-
-							<div class="col-12 col-md-6 <?= $class ?>">
-							    <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
-							        "AREA_FILE_SHOW" => "file",
-							        "PATH" => SITE_TEMPLATE_PATH."/include_areas/investor/vtoroy-vypusk/why_you_should_buy_btn.php",
-							    ));?>
-							</div>
-
-
 						</div>
 					</div>
 				</div>
