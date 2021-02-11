@@ -1,3 +1,11 @@
+function show_modal_map(el) {
+    $('.overlay-modal-ya-map').fadeIn();
+    $('body').css('overflow', 'hidden');
+    $('.overlay').css('overflow-y', 'scroll');
+    console.log($('.js-reklama-form-ya').find("*[name='ADDRESS']"));
+    $('.js-reklama-form-ya').find("*[name='ADDRESS']").val($(el).attr('data'));
+}
+
 $(document).ready(function () {
     $(".js-reklama-form").on("submit", function (e) {
         e.preventDefault();
@@ -115,7 +123,7 @@ $(document).ready(function () {
                 '<li class = "list-group-item" style="padding: 5px 20px;"> <img src="/local/scripts/map/img/magnifier_bl.png" id="zoom_b" class="sideb" style="cursor: pointer;margin-right: 10px;"/>' +
                 coord.textB +
                 " </li>" +
-                '</ul> <a href="#popup:myform" target data="' +
+                '</ul> <a href="#" target data="' +
                 coord.adress +
                 '" class="btn btn-success" style="padding: 10px; color:#fff;">Заказать</a>' +
                 "</div>";
@@ -192,13 +200,15 @@ $(document).ready(function () {
         var zoom_img_b = document.getElementById("zoom_b");
 
         if (target.tagName == "A") {
+            event.preventDefault();
             var idsheet = target.getAttribute("data");
             //var adres_sheet = document.getElementById('adress_zayavka');
             //adres_sheet.innerText = idsheet;
             //console.log('хотят заказать щит' + idsheet);
             var adreess = $('input[name="adress_points"]');
             adreess.val(idsheet);
-            t702_showPopup("44978333");
+            show_modal_map(target);
+            // t702_showPopup("44978333");
         }
         // делаем одну картинку видимой другую невидимой.
         if (target.className == "sidea") {
@@ -259,6 +269,7 @@ $(document).ready(function () {
         $('body').css('overflow', 'hidden');
         $('.overlay').css('overflow-y', 'scroll');
     });
+
     $('.close').click(function() {
         $('.overlay').fadeOut();
         $('body').css('overflow', 'auto');
