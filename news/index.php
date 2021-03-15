@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("Новости - компания \"Пионер - Ли�
                )
             );?>
     </div>
-    <div class="container container-2">
+    <div class="container">
         <?$APPLICATION->IncludeComponent("bitrix:news", "news", array(
             'NEWS_MAIN_SET_TITLE' => 'N',
             "DETAIL_PROPERTY_CODE" => array(),
